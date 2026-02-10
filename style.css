@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  background: #ffe6ee;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 350px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+h2 {
+  color: #d6336c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.buttons {
+  margin-top: 20px;
+  position: relative;
+  height: 120px;
+}
+
+#yesBtn {
+  background: #ff4d6d;
+  color: white;
+}
+
+#noBtn {
+  background: #adb5bd;
+  color: white;
+  position: absolute;
+}
+
+#yesBox {
+  display: none;
+}
+
+/* GIF fixes */
+.cats {
+  width: 100%;
+  max-width: 280px;
+  margin-top: 15px;
+
+  border-radius: 20px;
+
+  opacity: 1; /* fully visible */
+  /* remove mix-blend-mode for full visibility */
+  
+  /* Soft glow */
+}
+
+.cat-wrapper {
+  background: radial-gradient(circle at center, #ffe6ee 0%, transparent 70%);
+  padding: 15px;
+  border-radius: 30px;
+  display: inline-block;
+}
+
+.small-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+/* 🎉 POPPERS */
+.popper {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  animation: explode 1.2s ease-out forwards;
+}
+
+@keyframes floatUp {
+  to {
+    transform: translateY(-300px);
+    opacity: 0;
+  }
+}
